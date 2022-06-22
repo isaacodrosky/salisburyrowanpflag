@@ -1,0 +1,1013 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;600&display=swap");
+
+/*-----------
+    GENERAL
+------------*/
+
+:root {
+  --purple: #501f59;
+  --light-purple: #752483;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 1px;
+  font-size: 10px;
+  line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--purple);
+}
+
+/*-------------------
+    HEADER STYLES
+--------------------*/
+
+header {
+  max-width: 100%;
+  display: flex;
+  margin: 1em 1.5em;
+  margin-bottom: 0;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 5.5rem;
+  padding-left: 1em;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding-right: 20px;
+}
+
+.nav-main {
+  margin-left: 50px;
+}
+
+nav a:hover {
+  color: #454545;
+  text-decoration: underline;
+}
+
+.donate-btn {
+  background-color: var(--purple);
+  color: white;
+  padding: 10px 20px;
+  padding-bottom: 8px;
+  border: 2px solid var(--purple);
+  border-radius: 50vh;
+  margin-left: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+.donate-btn:hover {
+  background-color: white;
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  text-decoration: none;
+}
+
+/* dropdown from what we do */
+.dropbtn {
+  border: none;
+  background: none;
+  text-decoration: none;
+  font: inherit;
+  letter-spacing: inherit;
+  color: var(--purple);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+/* change color of links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(241, 241, 241);
+  color: #454545;
+  text-decoration: underline;
+}
+
+/* show dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ----------------
+    MAIN STYLES
+----------------- */
+
+main {
+  margin-bottom: 4em;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.heroimg {
+  max-width: 100%;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.tagline {
+  width: 70vw;
+  position: absolute;
+  color: white;
+  font-size: 3.7rem;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  line-height: 3.8rem;
+}
+
+/* ----------------
+    CARDS STYLES
+------------------ */
+
+.card-container {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.card {
+  max-width: 20vw;
+  padding: 20px;
+  margin: 0 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: var(--purple);
+  border: 5px solid var(--purple);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-mobile-link {
+  display: none;
+}
+
+.card-icon {
+  color: white;
+  margin: 15px 0;
+  font-size: 4rem;
+  align-self: center;
+}
+
+.card-title {
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.card-desc {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.2rem;
+}
+
+.card-btn {
+  background-color: var(--purple);
+  padding: 10px 15px;
+  align-self: center;
+  border: solid 2px white;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+  transition: background 0.2s ease;
+}
+
+.card-btn:hover {
+  background-color: white;
+  border: solid 2px white;
+  color: var(--purple);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ----------------
+    FOOTER STYLES
+------------------ */
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--purple);
+  padding: 20px 0;
+  line-height: 0.5rem;
+}
+
+footer p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.footer-icon {
+  padding-right: 10px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.footer-icon:hover {
+  color: lightgrey;
+}
+
+/* --------------------
+    SCHOLARSHIP STYLES
+--------------------- */
+
+.scholarship-h1 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  color: var(--purple);
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin: 20px 0;
+}
+
+.scholarship-p1 {
+  margin: 0 200px;
+  margin-top: 15px;
+  font-size: 1.3rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.scholarship-p {
+  margin: 0 200px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.scholarship-address {
+  margin: 0 200px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+
+
+/* --- ACCORDION STYLES --- */
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  margin: 15px auto;
+}
+
+.accordion-btn {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: left;
+  border: 2px solid #bababa;
+  cursor: pointer;
+  padding: 0.8em;
+  background-color: #bababa;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.accordion-btn:nth-of-type(odd) {
+  border: 2px solid #9b9b9b;
+  background-color: #9b9b9b;
+}
+
+.accordion-btn:hover {
+  background: #000;
+  border: 2px solid #000;
+}
+
+.panel {
+  overflow: hidden;
+  display: none;
+  padding: 0.5em 1em;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 200;
+  background: white;
+}
+
+.accordion-btn:after {
+  content: "\02795";
+  font-size: 1rem;
+  float: right;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+.active:hover {
+  border: 2px solid black;
+}
+
+/* --- END ACCORDION STYLES --- */
+
+.apply {
+  font-size: 1.3rem;
+  margin: 0 200px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.scholarship-p a {
+  color: var(--light-purple);
+}
+
+.apply a {
+  color: var(--light-purple);
+}
+
+.scholarship-p a:hover {
+  color: #bcbcbc;
+  text-decoration: underline;
+}
+
+.apply a:hover {
+  color: #bcbcbc;
+  text-decoration: underline;
+}
+
+/* --------------
+    EVENTS STYLES
+  --------------- */
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 25px auto;
+}
+
+.calendar-h1 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  color: var(--purple);
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.pflag-calendar {
+  align-self: center;
+}
+
+/* ---------------
+    ABOUT STYLES
+----------------- */
+
+.about-container {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.about-h1 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  color: var(--purple);
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.about-img {
+  width: 30%;
+  float: left;
+  margin-right: 20px;
+}
+
+.about-p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.8rem;
+  text-indent: 30px;
+}
+
+.about-p a {
+  color: var(--purple);
+}
+
+.about-p a:hover {
+  text-decoration: underline;
+}
+
+.about-h2 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  color: var(--purple);
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.no-indent {
+  text-indent: 0;
+}
+
+.about-cta {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-btn {
+  margin: 15px 30px;
+  padding: 5px 15px;
+  padding-top: 8px;
+  border: 2px solid var(--purple);
+  font-size: 1.2rem;
+  background: var(--purple);
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta-btn:hover {
+  background: white;
+  border: 2px solid var(--purple);
+  color: var(--purple);
+}
+
+.map-p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  padding-top: 10px;
+  border-top: 1px solid lightgrey;
+}
+
+.map {
+  margin-top: 20px;
+}
+
+/* -------------------
+    RESOURCES STYLES
+-------------------- */
+
+.resources-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.resources-h1 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  color: var(--purple);
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin: 30px 0;
+}
+
+.pflag-pub {
+  background: var(--purple);
+  margin: 10px;
+  padding: 20px 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.pflag-pub:hover {
+  background: black;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.pflag-pub div {
+  display: flex;
+  justify-content: center;
+}
+
+.pflag-pub-arrow {
+  color: white;
+  font-size: 1.6rem;
+  padding-left: 10px;
+}
+
+.pflag-pub-p {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 10px 15px 0 15px;
+}
+
+.resources-grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.resources-grid-item {
+  background: rgb(239, 239, 239);
+  margin: 10px;
+  padding: 20px 20px;
+}
+
+.resources-h2 {
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.resources-h3 {
+  color: black;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 1px solid darkgrey;
+  padding-bottom: 8px;
+}
+
+.resources-list {
+  font-size: 1.2rem;
+  padding-top: 1em;
+  line-height: 1.8rem;
+  margin-left: 25px;
+  text-indent: -20px;
+}
+
+.resources-list a {
+  color: var(--light-purple);
+}
+
+.resources-list a:hover {
+  text-decoration: underline;
+}
+
+/* --------------
+  CONTACT STYLES
+---------------- */
+
+.contact-h1 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  color: var(--purple);
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin: 30px 0;
+}
+
+/* hotline container */
+
+.contact-emergency-container {
+  background-color: rgba(255, 207, 15, 0.3);
+  color: #000;
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 85%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+}
+
+.contact-emergency-container p {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.contact-emergency-container ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.3rem;
+}
+
+.contact-emergency-container a {
+  color: rgb(255, 91, 3);
+}
+
+.contact-emergency-container a:hover {
+  color:#c40000;
+  text-decoration: underline;
+}
+
+
+/* left side pg */
+
+.contact-social-container {
+  max-width: 60%;
+  margin: 1em auto 0 auto;
+  padding: 1.5em;
+  color: var(--purple);
+  text-align: center;
+}
+
+.contact-h2 {
+  margin: 1em 0 .3em 0;
+  font-size: 2rem;
+}
+
+.contact-social-container p {
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin-bottom: 1em;
+}
+
+.contact-social-container a {
+  font-size: 2.5rem;
+  margin: .2em;
+}
+
+.contact-social-container a:hover {
+  color: #7f7f7f;
+}
+
+/* form styles */
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  color: var(--purple);
+  margin: 0 auto;
+  max-width: 60%;
+  padding: 1.5em;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.2rem;
+}
+
+label {
+  padding-bottom: .8em;
+}
+
+.opt {
+  font-size: .9rem;
+  color: #454545;
+  font-weight: 200;
+}
+
+.form-container input {
+  border: none;
+  border-bottom: 2px solid var(--purple);
+  background: #f0f0f0;
+  margin-top: .3em;
+  height: 2em;
+  font-family: inherit;
+  font-size: 1.1rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+input:focus {
+  background-color: #fff;
+}
+
+.message-label {
+  grid-column: 1 / 4;
+}
+
+.message-input {
+  border: 2px solid var(--purple);
+  grid-column: 1 / 4;
+  max-width: 100%;
+  background: #f0f0f0;
+  font-family: inherit;
+  font-size: 1.3rem;
+}
+
+.message-input:focus {
+  background-color: #fff;
+}
+
+.submit-btn {
+  background-color: var(--purple);
+  border: none;
+  color: white;
+  padding: .5em;
+  border-radius: 5px;
+  font-size: .9em;
+  font-weight: 600;
+  max-width: 70%;
+  grid-column-start: 3;
+  justify-self: end;
+}
+
+.submit-btn:hover {
+  background-color: var(--light-purple);
+}
+
+.submit-btn:active {
+  background-color: var(--purple);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* form success style */
+.submission {
+  max-width: 70%;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.submission h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  color: #454545;
+}
+
+.submission a {
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 2px solid var(--purple);
+}
+
+.submission a:hover {
+  color:#9b9b9b;
+  border: 2px solid #9b9b9b;
+}
+
+
+/* ------------------
+  RESPONSIVE STYLES
+-------------------- */
+
+/* do not display mobile-only elements on tablet+ sizes */
+@media only screen and (min-width: 700px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+/* adjusts format for xl desktop sizes */
+@media only screen and (max-width: 1200px) {
+  .calendar-container {
+    width: 80%;
+  }
+
+  .scholarship-p,
+  .scholarship-p1,
+  .scholarship-address,
+  .apply {
+    margin: 0 2em;
+  }
+}
+
+/* ----- TABLET STYLES ----- */
+
+@media only screen and (max-width: 900px) {
+  /* INDEX */
+  .tagline {
+    font-size: 2.3rem;
+    line-height: 1.8rem;
+  }
+
+  .card-desc {
+    display: none;
+  }
+
+  /* ABOUT US */
+  .about-container {
+    width: 90%;
+  }
+
+  /* EVENTS */
+  .calendar-container {
+    width: 90%;
+  }
+
+  /* SCHOLARSHIPS */
+  .scholarship-p,
+  .scholarship-p1,
+  .scholarship-address,
+  .apply {
+    margin: 0 1em;
+  }
+
+  /* CONTACT */
+  .contact-emergency-container ul {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-social-container {
+    max-width: 80%;
+  }
+
+  .form-container {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .message-input {
+    width: 100%;
+  }
+}
+
+/* ----- MOBILE STYLES ----- */
+
+@media only screen and (max-width: 700px) {
+  .no-mobile {
+    display: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* ----- HEADER & NAV ----- */
+
+  header {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+  }
+
+  .logo {
+    width: 4rem;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    background: #e3e3e3;
+    z-index: 999;
+    padding: 0.5em 1em 1em 1em;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-mobile {
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+    margin-top: 0.5em;
+    border-bottom: 1px solid var(--purple);
+  }
+
+  .nav-mobile a {
+    color: var(--purple);
+    font-size: 1.8rem;
+  }
+
+  .hamburger {
+    font-size: 3rem;
+    color: var(--purple);
+    padding-right: 10px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-toggle:checked ~ nav {
+    display: block;
+  }
+
+  .nav-social-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1.5em;
+  }
+
+  .nav-social-icon {
+    font-size: 3.5rem;
+    color: var(--purple);
+  }
+
+  /* ----- INDEX MAIN ----- */
+
+  .hero {
+    margin-bottom: 0;
+  }
+
+  .tagline {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .card {
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .card-mobile-link {
+    display: contents;
+  }
+
+  .card-icon {
+    color: var(--purple);
+    font-size: 2.5rem;
+  }
+
+  .card-title {
+    margin: 0 0 0 20px;
+    font-size: 1.5rem;
+    color: var(--purple);
+  }
+
+  /* ----- FOOTER ----- */
+
+  footer a,
+  footer span {
+    display: none;
+  }
+
+  /* ----- ABOUT ----- */
+
+  .cta-btn {
+    text-align: center;
+  }
+
+  /* ----- EVENTS ----- */
+
+  .pflag-calendar {
+    height: 400px;
+  }
+
+  /* ----- SCHOLARSHIPS ----- */
+
+  .scholarship-h1 {
+    line-height: 2.5rem;
+    margin: 0.5em;
+  }
+
+  .scholarship-p,
+  .scholarship-p1,
+  .scholarship-address,
+  .apply {
+    line-height: 1.8rem;
+    margin: 0.8em;
+  }
+
+  /* ----- RESOURCES ----- */
+
+  .resources-grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .tagline {
+    font-size: 1.5rem;
+  }
+}
