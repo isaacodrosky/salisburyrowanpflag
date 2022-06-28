@@ -29,8 +29,7 @@ a {
 header {
   max-width: 100%;
   display: flex;
-  margin: 1em 1.5em;
-  margin-bottom: 0;
+  margin: 1em 1.5em 1em 1.5em;
   justify-content: space-between;
 }
 
@@ -116,7 +115,7 @@ nav a:hover {
 }
 
 /* ----------------
-    MAIN STYLES
+    HERO STYLES
 ----------------- */
 
 main {
@@ -132,7 +131,6 @@ main {
 
 .heroimg {
   max-width: 100%;
-  margin-top: 1em;
   margin-bottom: 2em;
   position: relative;
 }
@@ -694,7 +692,7 @@ label {
   border-top-right-radius: 5px;
 }
 
-input:focus {
+.form-container input:focus {
   background-color: #fff;
 }
 
@@ -761,6 +759,40 @@ input:focus {
 .submission a:hover {
   color:#9b9b9b;
   border: 2px solid #9b9b9b;
+}
+
+/* ------------------
+  DONATE TEMP PAGE
+---------------------  */
+/* container/img class same as index page,
+ see index styles for arrangement of items */
+
+.donate-main {
+  margin-bottom: 0;
+}
+
+.donate-tagline {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 10px;
+}
+
+.donate-h1 {
+  font-size: 3rem;
+}
+
+.donate-h2 {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.donate-h2 a {
+  color: #bcbcbc;
+  font-weight: 400;
+}
+
+.donate-h2 a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 
@@ -861,12 +893,12 @@ input:focus {
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
     margin-top: 1em;
   }
 
   .logo {
-    width: 4rem;
+    width: 4.5rem;
   }
 
   nav {
@@ -886,7 +918,7 @@ input:focus {
     text-transform: uppercase;
     text-align: center;
     padding: 1em;
-    margin-top: 0.5em;
+    margin-top: .5em;
     border-bottom: 1px solid var(--purple);
   }
 
@@ -896,9 +928,10 @@ input:focus {
   }
 
   .hamburger {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--purple);
     padding-right: 10px;
+    padding-bottom: 10px;
   }
 
   .nav-toggle {
@@ -919,6 +952,14 @@ input:focus {
   .nav-social-icon {
     font-size: 3.5rem;
     color: var(--purple);
+  }
+
+  .nav-social-icon:hover {
+    color:rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-social-icon:active {
+    color: rgba(0, 0, 0, 0.4);
   }
 
   /* ----- INDEX MAIN ----- */
